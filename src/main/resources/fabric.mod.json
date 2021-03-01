@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "twofa",
+  "version": "${version}",
+  "name": "TwoFA",
+  "description": "Helper for Two-factor-authentication",
+  "authors": [
+    "UltraBlackLinux"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/TwoFA/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "me.ultrablacklinux.twofa.client.TwoFAClient"
+    ],
+    "main": [
+      "me.ultrablacklinux.twofa.TwoFA"
+    ]
+  },
+  "mixins": [
+    "TwoFA.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.2",
+    "fabric": "*",
+    "minecraft": "*",
+    "cloth-config2": ">=4.10.6"
+  }
+}
