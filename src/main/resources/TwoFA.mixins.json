@@ -5,10 +5,7 @@
   "compatibilityLevel": "JAVA_8",
   "mixins": [
     "ClientPlayNetworkHandlerMixin",
-    "NetworkMixin",
-    "PlayerMixin"
-  ],
-  "client": [
+    "NetworkMixin"
   ],
   "injectors": {
     "defaultRequire": 1
