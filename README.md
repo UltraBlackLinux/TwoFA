@@ -6,10 +6,7 @@
 Automatically logs you in on servers, that use 2-Factor-Authentication via /login
 
 # Features:
-- Auto retrieves credentials on /register
+- Auto register
 - Auto login
-
-# Commands:
-- /twofa
-- /twofa delete
-- /twofa add <Password>
+- Server White-/Blacklist
+- Ingame Commands (including manual override)
