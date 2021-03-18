@@ -23,6 +23,16 @@ public class TwoFaCommand implements ClientCommandPlugin {
                     }
                     return 1;
                 }))
+                .then(literal("add").executes(ctx -> {
+                    if (client.isInSingleplayer()) {
+                        client.player.sendMessage(Text.of("[TwoFA] §cYou can't run that in singleplayer!"), false);
+                    }
+                    else {
+                        System.out.println(ctx.getInput());
+                        //Account.addEntry(client.getCurrentServerEntry().address);
+                    }
+                    return 1;
+                }))
                 .then(literal("register").executes(ctx -> {
                     if (client.isInSingleplayer()) {
                         client.player.sendMessage(Text.of("[TwoFA] §cYou can't run that in singleplayer!"), false);
