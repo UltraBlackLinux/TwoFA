@@ -36,6 +36,8 @@ public class Config extends PartitioningSerializer.GlobalData {
         return AutoConfig.getConfigHolder(Config.class).getConfig();
     }
 
+    public static void save() { AutoConfig.getConfigHolder(Config.class).save(); }
+
 
     @me.shedaniel.autoconfig.annotation.Config(name = "general")
     public static class General implements ConfigData {
@@ -45,6 +47,9 @@ public class Config extends PartitioningSerializer.GlobalData {
 
         @Comment("Only applies, when \"Whitelist/Blacklist\" is enabled ")
         public String servers = "";
+
+        @ConfigEntry.Gui.Excluded
+        public int version = 0;
     }
 
 
@@ -67,15 +72,6 @@ public class Config extends PartitioningSerializer.GlobalData {
     public static class Login implements ConfigData {
         public boolean autoLogin = true;
     }
-
-
-
-
-    @me.shedaniel.autoconfig.annotation.Config(name = "misc")
-    public static class Misc implements ConfigData {
-        public String itemSeparator = ";";
-    }
-
 
 }
 
