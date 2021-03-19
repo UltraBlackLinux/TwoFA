@@ -31,17 +31,12 @@ dependencies {
 
     implementation 'com.google.code.gson:gson:2.8.5'
 
-    modImplementation "io.github.cottonmc:cotton-client-commands:${project.mod_cc_version}"
 
 }
 
 repositories {
     maven { url = "https://maven.shedaniel.me/" }
     maven { url = "https://maven.terraformersmc.com/releases/" }
-    maven {
-        name = 'CottonMC'
-        url = 'https://server.bbkr.space/artifactory/libs-release'
-    }
 }
 
 
@@ -77,6 +72,7 @@ jar {
     from "LICENSE"
 }
 
+/*
 // configure the maven publication
 publishing {
     publications {
@@ -96,4 +92,4 @@ publishing {
         // uncomment to publish to the local maven
         // mavenLocal()
     }
-}
+}*/

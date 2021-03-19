@@ -3,7 +3,7 @@
   "id": "twofa",
   "version": "${version}",
   "name": "TwoFA",
-  "description": "Helper for Two-factor-authentication",
+  "description": "Keepass for minecraft",
   "authors": [
     "UltraBlackLinux"
   ],
@@ -20,9 +20,6 @@
     ],
     "modmenu": [
       "me.ultrablacklinux.twofa.config.modmenu.ModMenuEntry"
-    ],
-    "cotton-client-commands": [
-      "me.ultrablacklinux.twofa.command.TwoFaCommand"
     ]
   },
   "mixins": [
@@ -33,7 +30,6 @@
     "fabric": "*",
     "minecraft": "*",
     "modmenu": ">=1.16.7",
-    "cloth-config2": ">=4.10.6",
-    "cotton-client-commands": "^1.0.1"
+    "cloth-config2": ">=4.10.6"
   }
 }

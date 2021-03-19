@@ -1,5 +1,6 @@
 package me.ultrablacklinux.twofa;
 
+import me.ultrablacklinux.twofa.command.TwoFaCommand;
 import me.ultrablacklinux.twofa.config.Config;
 import me.ultrablacklinux.twofa.config.VersionManager;
 import net.fabricmc.api.ModInitializer;
@@ -13,6 +14,7 @@ public class TwoFA implements ModInitializer {
     public void onInitialize() {
         Config.init();
         VersionManager.init();
+        TwoFaCommand.registerCommands();
         logger.info("[TwoFA] Started");
     }
 }

@@ -10,17 +10,15 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(ClientPlayNetworkHandler.class)
 public class ClientPlayNetworkHandlerMixin {
+
     @Inject(method = "onTitle", at = @At("HEAD"))
     private void onTitle(TitleS2CPacket packet, CallbackInfo ci) {
         boolean hasCorrectTitle = false;
-
         if ((packet.getAction() == TitleS2CPacket.Action.TITLE || packet.getAction() == TitleS2CPacket.Action.SUBTITLE)) {
             hasCorrectTitle = true;
         }
         if (hasCorrectTitle) {
             Account.getMessage(packet.getText().getString());
         }
-
-
     }
 }
