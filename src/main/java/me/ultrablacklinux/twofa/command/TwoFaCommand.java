@@ -33,7 +33,8 @@ public class TwoFaCommand {
                         "§e/twofa addToList: Adds the current server to the settings\n" +
                         "§e/twofa login: Logs You in\n" +
                         "§e/twofa register: Registers You\n" +
-                        "§e/twofa delete: Deletes current server's entry\n"), false);
+                        "§e/twofa delete: Deletes current server's entry\n" +
+                        "§e/twofa add <password>: Adds an entry for the current server"), false);
                 break;
 
             case 0: //add
