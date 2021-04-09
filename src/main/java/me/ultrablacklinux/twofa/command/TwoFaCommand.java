@@ -1,6 +1,7 @@
 package me.ultrablacklinux.twofa.command;
 
 import me.ultrablacklinux.twofa.util.Account;
+import me.ultrablacklinux.twofa.util.Util;
 import net.fabricmc.fabric.api.client.command.v1.ClientCommandManager;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.command.argument.MessageArgumentType;
@@ -39,7 +40,7 @@ public class TwoFaCommand {
 
             case 0: //add
                 try {
-                    Account.addEntry(args.split(" ")[2].replace(" ", ""));
+                    Account.addEntry(Util.toBase(args.split(" ")[2].replace(" ", "")));
                 } catch (ArrayIndexOutOfBoundsException ingore) {}
                 break;
 

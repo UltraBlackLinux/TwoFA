@@ -32,7 +32,6 @@ public class Account {
         if (server != null && server.has(client.getCurrentServerEntry().address)) {
             client.player.sendMessage(Text.of("[TwoFA] §aLogging in..."), false);
             client.player.sendChatMessage("/login " + Util.fromBase(server.get(client.getCurrentServerEntry().address).getAsString()));
-            System.out.println(server.get(client.getCurrentServerEntry().address).getAsString());
         }
         else {
             client.player.sendMessage(Text.of("[TwoFA] §cNo entry found"), false);
@@ -69,7 +68,6 @@ public class Account {
         }
         oldEntries.add(client.getCurrentServerEntry().address, new JsonPrimitive(password)); //add current server with password
         Config.get().registration.data.replace(client.player.getName().getString(), oldEntries); //replace the old entry with a new one
-        System.out.println(Config.get().registration.data.get(client.player.getName().getString()));
         Config.save(); //save config
         client.player.sendMessage(Text.of("[TwoFA] §aSaved credentials!"), false);
     }
