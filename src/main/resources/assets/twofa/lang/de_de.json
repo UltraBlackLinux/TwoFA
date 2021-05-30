@@ -1,0 +1,24 @@
+{
+  "text.autoconfig.twofa.title": "Optionen",
+  "text.autoconfig.twofa.option.general": "Allgemein",
+
+  "text.autoconfig.twofa.option.general.@PrefixText": "Type \"/twofa\" for ingame commands!",
+
+  "text.autoconfig.twofa.option.general.savingOptions": "Login/Registrieren",
+  "text.autoconfig.twofa.option.general.savingOptions.@Tooltip[0]": "Immer",
+  "text.autoconfig.twofa.option.general.savingOptions.@Tooltip[1]": "Niemals",
+  "text.autoconfig.twofa.option.general.savingOptions.@Tooltip[2]": "Nur auf vertraulichen Servern",
+  "text.autoconfig.twofa.option.general.savingOptions.@Tooltip[3]": "Niemals auf unsicheren Servern",
+
+  "text.autoconfig.twofa.option.general.servers": "Server Liste",
+
+  "text.autoconfig.twofa.option.registration": "Registrierung",
+  "text.autoconfig.twofa.option.registration.autoRegister": "automatisch registrieren",
+  "text.autoconfig.twofa.option.registration.random": "Zufälliges Passwort",
+  "text.autoconfig.twofa.option.registration.defaultPass": "Standard Passwort",
+  "text.autoconfig.twofa.option.registration.randomChars": "Passwortzeichen",
+  "text.autoconfig.twofa.option.registration.randomLength": "Passwortlänge",
+
+  "text.autoconfig.twofa.option.login": "Login",
+  "text.autoconfig.twofa.option.login.autoLogin": "automatischer Login"
+}
