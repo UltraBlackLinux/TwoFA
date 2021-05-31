@@ -7,8 +7,8 @@
   "text.autoconfig.twofa.option.general.savingOptions": "Login/Registrieren",
   "text.autoconfig.twofa.option.general.savingOptions.@Tooltip[0]": "Immer",
   "text.autoconfig.twofa.option.general.savingOptions.@Tooltip[1]": "Niemals",
-  "text.autoconfig.twofa.option.general.savingOptions.@Tooltip[2]": "Nur auf vertraulichen Servern",
-  "text.autoconfig.twofa.option.general.savingOptions.@Tooltip[3]": "Niemals auf unsicheren Servern",
+  "text.autoconfig.twofa.option.general.savingOptions.@Tooltip[2]": "Nur auf Whitelisted Servern",
+  "text.autoconfig.twofa.option.general.savingOptions.@Tooltip[3]": "Niemals auf Blacklisted Servern",
 
   "text.autoconfig.twofa.option.general.servers": "Server Liste",
 
