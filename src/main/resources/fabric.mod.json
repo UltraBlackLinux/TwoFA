@@ -11,7 +11,7 @@
     "homepage": "https://github.com/UltraBlackLinux/TwoFA",
     "issues": "https://github.com/UltraBlackLinux/TwoFA/issues"
   },
-  "license": "GPLv3",
+  "license": "MIT",
   "icon": "assets/twofa/icon.png",
   "environment": "*",
   "entrypoints": {

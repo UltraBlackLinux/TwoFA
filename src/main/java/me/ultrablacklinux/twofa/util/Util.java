@@ -24,8 +24,6 @@ public class Util {
             for (int i = 0; i < Config.get().registration.randomLength; i++) {
                 ArrayList<String> chars = new ArrayList<>(Arrays.asList(Config.get().registration.randomChars.split("")));
 
-                //Collections.shuffle(chars);
-                //tmppass.add(chars.get(0));
                 tmppass.add(chars.get(new SecureRandom().nextInt(chars.size())));
             }
             password = String.join("", tmppass.toArray(new String[tmppass.size()]));
